@@ -1,0 +1,152 @@
+<!-- CSS – Icon, Google Font, Transform, Transition, Animation -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Column Webpage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> <
+  <style>
+   
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .column {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease; 
+    }
+
+    .left-column {
+      background-color: lightgray;
+    }
+
+    .left-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .right-column {
+      background-color: lightgreen;
+    }
+
+    .right-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul {
+      font-family: 'Open Sans', sans-serif;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: '\f02d';
+      font-family: FontAwesome;
+      margin-right: 10px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease; 
+    }
+
+    .image-container img:hover {
+      transform: rotate(15deg) scale(1.2);
+    }
+    
+    .marquee {
+      background-color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      animation: marquee 5s linear infinite;
+      color: red;
+    }
+
+    .marquee-text span {
+      color: orange;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+ 
+    <div class="column left-column">
+      <h2>Bestselling Kindle Books</h2>
+      <ul>
+        <li>Things We Left Behind</li>
+        <li>The Coworker: An Addictive Psychological Thriller</li>
+        <li>Cruel Paradise</li>
+        <li>My Evil Mother</li>
+        <li>Where the Crawdads Sing. ...</li>
+      </ul>
+    </div>
+
+    <div class="column right-column">
+      <h2>Your Favorite Celebrities</h2>
+      <ul>
+        <li>Allu Arjun</li>
+        <li>Mahesh Babu</li>
+        <li>Prabhas</li>
+        <li>Rajnikant</li>
+        <li>Vijay Deverakonda</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>List of Best Hindi Films</h2>
+  <ul>
+    <li>Dangal</li>
+    <li>Bahubali 2</li>
+    <li>Pathan</li>
+    <li>URI</li>
+    <li>RRR</li>
+  </ul>
+  <h2>Images with Effects</h2>
+  <div class="image-container">
+    <img src="images (1).jpg" alt="Image 1">
+    <img src="images.jpg" alt="Image 2">
+    <img src="photography.jpg" alt="Image 3">
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-text">
+      Important Message: <span>css - Icon, Google Font, Transform, Transition, Animation Page</span>
+    </div>
+  </div>
+</body>
+</html>

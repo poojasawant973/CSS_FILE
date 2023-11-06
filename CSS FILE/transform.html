@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>transform</title>
+	<style>
+		#box img {
+/*			transform: translate(200px);*/
+			padding: 50px;
+/*			transform: rotate(45deg);*/
+/*			transition: transform 0.5s;*/
+			transition: transform 2s;
+		}
+		#box img:hover {
+			/*transform: scale(1.1); //300*1.5=output
+			border: 3px solid black;
+			border-top-left-radius: 20px;
+			border-bottom-right-radius: 20px;*/
+			transform: rotate(360deg); //720 se 2 time rotate
+
+		}
+		/*#img1 {
+			transform: translateY(100px); 
+			transform: scale(2.0); //size h&w double
+			/*transition-property: trasform;
+			transition-duration: 0.5s;*/
+		}*/
+	</style>
+</head>
+<body>
+	<div id="box">
+	<img src="C:\Users\B97\Desktop\image34.jpg" width="300" height="200" id="img1">
+	<img src="C:\Users\B97\Desktop\image34.jpg" width="300" height="200">
+	<img src="C:\Users\B97\Desktop\image34.jpg" width="300" height="200">
+
+</div>
+</body>
+</html>

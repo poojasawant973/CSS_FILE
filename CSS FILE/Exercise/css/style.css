@@ -1,0 +1,11 @@
+p {
+	color:red;
+	text-align:center;
+}
+h1,h2{
+	text-transform:uppercase;
+	color:Green;
+	text-shadow:2px 3px 4px black;
+	text-align:center;
+	
+}
